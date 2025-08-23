@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tela de Registro</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="img/wallpaper-iconmenu/game-icon.png" alt="">
+                <a href="login.html">Gaming Store
+                </a>
+            </div>
+            <div class="nav-menu-icon" id="navMenuIcon">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+            <div class="nav-login">
+                <a href="login.html">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <form id="registerForm" action="#">
+            <h1>Registro</h1>
+            <div class="input-box">
+                <input type="text" name="nomeCompleto" placeholder="Nome Completo" id="nomeCompleto" autocomplete="off"
+                    required>
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="usuario" placeholder="Usuário" id="usuario" autocomplete="off" required>
+                <i class='bx bx-user-circle'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Email" id="email" autocomplete="off" required>
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="senha" placeholder="Senha" id="senha" autocomplete="off" required>
+                <i class='bx bx-lock'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="confirmarSenha" placeholder="Confirmar Senha" id="confirmarSenha"
+                    autocomplete="off" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="cpf" placeholder="CPF" id="cpf" autocomplete="off" required>
+                <i class='bx bx-id-card'></i>
+                <i class='bx bx-check-circle' id="cpfValidIcon" style="display: none; color: green;"></i>
+            </div>
+            <button type="submit" class="btn">Registrar</button>
+            <div class="login-link">
+                <p>Já tem conta? <a href="login.html">Faça login</a></p>
+            </div>
+            <div id="mensagemErro"></div>
+        </form>
+    </div>
+
+    <script src="scripts/registerScript.js"></script>
+    <script src="/scripts/mobile-menu.js"></script>
+</body>
+
+</html>

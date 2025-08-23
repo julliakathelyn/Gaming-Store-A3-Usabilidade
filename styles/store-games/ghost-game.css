@@ -1,0 +1,336 @@
+/* Estilos gerais */
+/* ----------------------------- */
+
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* Estilos do Body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    color: #fff;
+    margin-top: 1px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Estilos do Container Principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+}
+
+/* Estilos dos Lados Esquerdo e Direito do Container */
+.esquerda,
+.direita {
+    padding: 20px;
+    flex: 1;
+}
+
+.esquerda {
+    flex: 10;
+}
+
+.direita {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* imagem do jogo */
+.game-images {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.produto-galeria {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Estilos do Título do Jogo */
+.title-game {
+    font-size: 30px;
+    color: #ff5733;
+}
+
+/* Estilos dos Itens da Galeria */
+.produto-galeria-items {
+    position: relative;
+    height: 400px;
+}
+
+.produto-galeria-items iframe,
+.produto-galeria-items img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.produto-galeria-items .active {
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.produto-galeria--thumbs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.produto-galeria--thumbs .thumb {
+    width: 100px;
+    height: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6;
+    /*deixar meio escuro a imagem*/
+}
+
+.produto-galeria--thumbs .thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+.produto-galeria--thumbs .thumb.active {
+    opacity: 1;
+    border: 2px solid #000;
+}
+
+.game-descricao h2 {
+    color: #ff5733;
+}
+
+/* txt do desconto e preco */
+.secao-de-precos {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.desconto {
+    border-radius: 10px;
+    color: #ff5733;
+    font-weight: bold;
+    font-size: 3em;
+    /* Increase size */
+    background-color: rgba(255, 87, 51, 0.1);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.preco {
+    font-size: 1.5em;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 10px;
+}
+
+.desconto-preco {
+    font-size: 2em;
+    color: #27ae60;
+}
+
+.detalhes-do-preco {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* info da ativacao */
+.info-ativacao {
+    margin: 20px 0;
+}
+
+/* requisitos do sistema,infos importantes , regioes disponiveis e info do jogo */
+.requisitos-de-sistema,
+.info-importante,
+.regioes-disponiveis,
+.game-info {
+    margin: 20px 0;
+}
+
+.game-info strong {
+    color: #ff5733;
+}
+
+.regioes-disponiveis h3 {
+    color: #ff5733;
+}
+
+
+
+.info-importante a {
+    text-decoration: none;
+    color: #ff5733;
+}
+
+
+
+.requisitos-de-sistema h2,
+.requisitos-de-sistema p,
+.requisitos-de-sistema strong {
+    color: #ff5733;
+}
+
+/* box das informacoes */
+.info-box {
+    background-color: rgba(255, 255, 0, 0.1);
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 0, 0.5);
+    border-radius: 4px;
+}
+
+/* regioes e informacoes do jogo */
+.regioes-disponiveis,
+.game-info {
+    background-color: rgba(0, 255, 255, 0.1);
+    padding: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+/* suporte de Idiomas */
+.suporte-linguas {
+    margin: 20px 0;
+}
+
+.suporte-linguas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.suporte-linguas ul li {
+    margin: 5px 0;
+}
+
+.suporte-linguas ul li span {
+    display: inline-block;
+    width: 150px;
+}
+
+.suporte-linguas h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Adiciona um espaço de 10px entre os ícones */
+}
+
+.icon-gap {
+    width: 68px;
+    /* Define um espaço fixo de 90px entre "IDIOMA" e os ícones */
+}
+
+
+/* Estilos dos Botões de Ação */
+.botoes-de-acao {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.botao-compra,
+.botao-desejo {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, border 0.3s;
+}
+
+.botao-compra:hover,
+.botao-desejo:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.botao-compra i,
+.botao-desejo i {
+    margin-right: 10px;
+}
+
+/* para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .esquerda,
+    .direita {
+        padding: 10px;
+    }
+
+    .direita {
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .secao-de-precos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desconto {
+        font-size: 2em;
+        padding: 5px;
+        margin: 0 0 10px 0;
+    }
+
+    .detalhes-do-preco {
+        align-items: center;
+        text-align: center;
+    }
+
+    .botoes-de-acao {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .botao-compra,
+    .botao-desejo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .produto-galeria--thumbs .thumb {
+        width: 70px;
+        height: 40px;
+        margin: 0 2px;
+    }
+
+    .suporte-linguas ul li span {
+        width: 120px;
+    }
+
+    .suporte-linguas ul li span {
+        width: 120px;
+        /* Reduz a largura das caixas de texto dos idiomas */
+    }
+}

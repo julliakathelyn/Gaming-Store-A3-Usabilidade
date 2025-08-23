@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Esqueci a Senha</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="img/wallpaper-iconmenu/game-icon.png" alt="">
+                <a href="login.html">Gaming Store
+                </a>
+            </div>
+            <div class="nav-menu-icon" id="navMenuIcon">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+            <div class="nav-login">
+                <a href="login.html">Entrar</a>
+            </div>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <form id="forgotPasswordForm" action="#">
+            <h1>Esqueci a Senha</h1>
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Digite seu e-mail" id="email" required>
+                <i class='bx bx-envelope'></i>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+            <div class="login-link">
+                <p>Lembrou sua senha? <a href="login.html">Login</a></p>
+            </div>
+            <div id="mensagemErro"></div>
+        </form>
+    </div>
+    <script src="scripts/EsqueciSenha.js"></script>
+    <script src="/scripts/mobile-menu.js"></script>
+</body>
+
+</html>

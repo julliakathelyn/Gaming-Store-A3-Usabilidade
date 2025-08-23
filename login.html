@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="img/wallpaper-iconmenu/game-icon.png" alt="">
+                <a href="login.html">Gaming Store
+                </a>
+            </div>
+            <div class="nav-menu-icon" id="navMenuIcon">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+            <div class="nav-login">
+                <a href="login.html">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <form id="loginForm" action="#">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" name="usuario" placeholder="Usuário" id="usuario" required autocomplete="off">
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="senha" placeholder="Senha" id="senha" required autocomplete="off">
+                <i class='bx bx-lock'></i>
+            </div>
+            <div class="lembrar">
+                <label><input type="checkbox"> Lembrar de mim</label>
+                <a href="esqueciSenha.html">Esqueceu a senha?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="registro-link">
+                <p>Não tem conta? <a href="register.html">Registre-se</a></p>
+            </div>
+            <div id="mensagemErro"></div>
+        </form>
+    </div>
+
+    <script src="/scripts/loginScript.js"></script>
+    <script src="/scripts/mobile-menu.js"></script>
+</body>
+
+</html>

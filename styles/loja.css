@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/img/wallpaper-iconmenu/test03.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin-top: 1px; /* Adicionando margem ao topo do corpo */
+}
+
+/*banner*/
+.banner {
+    position: relative;
+    margin-top: 30px;
+    width: 65%; /* largura do banner */
+    overflow: hidden; /* esconde os bannmers que excede o limite */
+    text-align: center;
+    border-radius: 20px; /*bordas redondas*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /*sombra do banner*/
+}
+/*container do banner*/
+.banner-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* animacao suave da transicao */
+}
+
+/*minmo de tamanho*/
+.slide {
+    min-width: 100%; /*largura minima de cada slide e 100%% do container */
+    transition: opacity 1s ease; /* transicao do banner de 1s*/
+}
+
+.banner-img {
+    width: 100%; /* largura da imagem e em 100% do container */
+    height: auto; /* Altura ajusta de acordo com a proporção da tela */
+    border-radius: 20px;
+}
+/* < > banners*/
+.prev, .next {
+    cursor: pointer; /* quando passa o mouse nas setas o cursor muda para um ponteiro */
+    position: absolute; /* posicao das setas fica de forma absoluita no banner */
+    top: 50%; /* verticalmente centralizado */
+    width: auto; /* tamanho da box da largura */
+    padding: 16px;
+    color: white;
+    font-weight: bold; /* em negrito*/
+    font-size: 18px;
+    transition: 0.6s ease; /* transicao de 0.6s */ 
+    user-select: none; /* nao pode selecionar igual um texto */
+    transform: translateY(-50%); /* centralizando os < >  */
+    border-radius: 3px; 
+}
+/* posicao do botao < */
+.prev {
+    left: 0; /* alinha pra esquerda */
+    margin-left: 10px; /* margem pra esquerda*/
+}
+
+/* posicao do botao > */
+.next {
+    right: 0; /* alinha pra direita */
+    margin-right: 10px; /* margem pra direita*/
+}
+
+/* efeito de troca de cor nas setas < >*/
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8); /* altera a cor de fundo do hover */
+}
+
+/* pontos de troca de banner*/
+/* div class*/
+.dots {
+    text-align: center; /* alinhando os pontos indicadores */
+    position: absolute;
+    bottom: 8px; /* alinha a parte inferior */
+    width: 100%; 
+}
+
+/* span dot */
+.dot {
+    cursor: pointer; /*cursor como ponteiro*/
+    height: 15px;/*altura*/
+    width: 15px;/*largura*/
+    margin: 0 2px; /* margem horizontal */
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block; /* em linha */
+    transition: background-color 0.6s ease; /*transicao da cor de fundo*/
+}
+
+/* JS */
+.active, .dot:hover { 
+    background-color: #717171; /*cor do fundo ativo ou no hover*/
+}
+
+/* container dos jogos */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ajustando colunas da grade */
+    gap: 20px; /*espacamento entre os conteudo */
+    max-width: 1200px; /* largura maxima do container*/
+    width: 100%; /* largura do container em 100% */
+    padding: 20px;
+    box-sizing: border-box; /* inclui un padding e bordas do tamanho da tela */
+}
+/*card game*/
+.product-card {
+    background-color: rgba(255, 255, 255, 0.1); /* fundo semi transparente */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* borda semi transparente */
+    backdrop-filter: blur(20px); /* desdoque do fundo do card */
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*sombra*/
+    text-align: center;
+    color: white;
+}
+
+/*editando tamanho e borda*/
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/*estilo do texto e margin*/
+.product-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* desconto estilo*/
+.product-card .discount {
+    color: #ff5733;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*estilo do texto antes preco*/
+.product-card .price {
+    text-decoration: line-through;
+    color: #999;
+    margin: 5px 0;
+    font-size: 14px;
+}
+/* estilo preco com desconto*/
+.product-card .final-price {
+    color: #27ae60;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+/* botao da compra do card */
+.product-card button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+/* altera a cor quando passa o mouse*/
+.product-card button:hover {
+    background-color: #ff5733;
+}
+
+/*responsividade das colunas dos jogos*/
+@media (max-width: 768px) {
+    .product-container {
+        /* fr é uma fracao do espaço disponivel */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        /*150/200px = 2 colunas*/
+        /* 100px = 3 colunas */
+        /*auto-fit adpta o numero de colunas ao espaco disponivel, expandindo ou contraindo para caber maior numero possivel de COLUNAS*/
+    }
+}
+
+@media (max-width:768px) {
+    .product-container {
+        padding: 10px;
+    }
+    
+    .product-card {
+        padding: 10px;
+    }
+    
+    .product-card h2 {
+        font-size: 16px;
+    }
+    
+    .product-card .discount,
+    .product-card .price,
+    .product-card button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .product-container {
+        gap: 10px;
+    }
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Suporte</title>
+    <link rel="stylesheet" href="../styles/formularioSuporte.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Puxando icones-->
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="login.html">Logotemp</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="../comunidade.html">Comunidade</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="../suporte.html">Suporte</a></li>
+            </ul>
+            <div class="nav-login">
+                <a href="login.html">Entrar</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="formulario">
+            <form id="registerForm" action="#">
+                <h1>Formulario de Atendimento</h1>
+                <div class="input-box">
+                    <input type="text" name="nomeCompleto" placeholder="Nome Completo" id="nomeCompleto" required>
+                    <i class='bx bx-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" id="email" required>
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <div class="input-label">
+                    <label for="problema">Mesagem</label><br>
+                    <textarea name="problema" id="probl" cols="90px" rows="10px"></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+                <div class="login-link">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

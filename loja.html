@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/loja.css">
+    <link rel="stylesheet" href="/styles/menu.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <script defer src="/scripts/banner.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gaming Store</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="img/wallpaper-iconmenu/game-icon.png" alt="">
+                <a href="login.html">Gaming Store
+                </a>
+            </div>
+            <div class="nav-menu-icon" id="navMenuIcon">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+            <div class="nav-login">
+                <a href="login.html">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="banner-slides">
+            <div class="slide active">
+                <img class="banner-img" src="/img/loja-icons/ghost-banner.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="banner-img" src="/img/loja-icons/gtav-banner.png" alt="">
+            </div>
+            <div class="slide">
+                <img class="banner-img" src="/img/loja-icons/cod-black-banner.png" alt="">
+            </div>
+        </div>
+        <a class="prev" onclick="avancarSlides(-1)">&#10094;</a>
+        <a class="next" onclick="avancarSlides(1)">&#10095;</a>
+        <div class="dots">
+            <span class="dot active" onclick="slideAtual(1)"></span>
+            <span class="dot" onclick="slideAtual(2)"></span>
+            <span class="dot" onclick="slideAtual(3)"></span>
+        </div>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="/img/loja-icons/ghost.png" alt="Ghost of Tsushima Director's Cut">
+            <h2>Ghost of Tsushima Director's Cut</h2>
+            <p class="discount">11% OFF</p>
+            <p class="price">R$ 249,99</p>
+            <p class="final-price">R$ 221,99</p>
+            <a href="ghost-game.html"><button>Comprar</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="/img/loja-icons/mk-11.png" alt="Sonic Frontiers">
+            <h2>Mortal Kombat 11</h2>
+            <p class="discount">90% OFF</p>
+            <p class="price">R$ 229,99</p>
+            <p class="final-price">R$ 22,99</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/eldenring.png" alt="Elden Ring">
+            <h2>Elden Ring</h2>
+            <p class="discount">12% OFF</p>
+            <p class="price">R$ 229,90</p>
+            <p class="final-price">R$ 201,99</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/valhalla.png" alt="Assassin's Creed Valhalla">
+            <h2>Assassin's Creed Valhalla</h2>
+            <p class="discount">80% OFF</p>
+            <p class="price">R$ 199,99</p>
+            <p class="final-price">R$ 39,99</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/scarlet-nexus.png" alt="SCARLET NEXUS">
+            <h2>SCARLET NEXUS</h2>
+            <p class="discount">84% OFF</p>
+            <p class="price">R$ 257,90</p>
+            <p class="final-price">R$ 41,26</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/back-4-blood.png" alt="Back 4 Blood">
+            <h2>Back 4 Blood</h2>
+            <p class="discount">90% OFF</p>
+            <p class="price">R$ 279,99</p>
+            <p class="final-price">R$ 27,99</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/lego-skywalker-saga.png" alt="LEGO Star Wars: The Skywalker Saga">
+            <h2>LEGO Star Wars: The Skywalker Saga</h2>
+            <p class="discount">75% OFF</p>
+            <p class="price">R$ 249,99</p>
+            <p class="final-price">R$ 62,49</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/batman-arkham-collection.png" alt="Batman Arkham Collection">
+            <h2>Batman Arkham Collection</h2>
+            <p class="discount">90% OFF</p>
+            <p class="price">R$ 299,99</p>
+            <p class="final-price">R$ 29,99</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/resident-evil-2.png" alt="Resident Evil 2">
+            <h2>Resident Evil 2 Delux Edition</h2>
+            <p class="discount">70% OFF</p>
+            <p class="price">R$ 159,99</p>
+            <p class="final-price">R$ 47,99</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/hades.png" alt="Hades">
+            <h2>Hades</h2>
+            <p class="discount">50% OFF</p>
+            <p class="price">R$ 92,99</p>
+            <p class="final-price">R$ 46,49</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/middle-earth-shadow-of-mordor.png"
+                alt="Middle-earth: Shadow of Mordor - Game of the Year Edition">
+            <h2>Middle-earth: Shadow of Mordor - Game of the Year Edition</h2>
+            <p class="discount">95% OFF</p>
+            <p class="price">R$ 199,99</p>
+            <p class="final-price">R$ 9,99</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/star-wars-squadrons.png" alt="Star Wars: Squadrons">
+            <h2>Star Wars: Squadrons</h2>
+            <p class="discount">85% OFF</p>
+            <p class="price">R$ 209,99</p>
+            <p class="final-price">R$ 31,49</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/star-wars-jedi-fallen-order.png" alt="Star Wars Jedi: Fallen Order">
+            <h2>Star Wars Jedi: Fallen Order</h2>
+            <p class="discount">60% OFF</p>
+            <p class="price">R$ 249,99</p>
+            <p class="final-price">R$ 99,99</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/the-witcher-3.png" alt="The Witcher 3: Wild Hunt">
+            <h2>The Witcher 3: Wild Hunt</h2>
+            <p class="discount">70% OFF</p>
+            <p class="price">R$ 149,99</p>
+            <p class="final-price">R$ 44,99</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/img/loja-icons/gtav.png" alt="Grand Theft Auto V: Premium Online Edition">
+            <h2>Grand Theft Auto V: Premium Online Edition</h2>
+            <p class="discount">50% OFF</p>
+            <p class="price">R$ 82,42</p>
+            <p class="final-price">R$ 41,21</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/loja-icons/mine.png" alt="Minecraft: Java and Bedrock Deluxe Collection">
+            <h2>Minecraft: Java and Bedrock Deluxe Collection</h2>
+            <p class="discount">50% OFF</p>
+            <p class="price">R$ 199,00</p>
+            <p class="final-price">R$ 99,50</p>
+            <button>Comprar</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>À procura de recomendações?</p>
+            <br>
+            <div class="footer-recommendations">
+                <a href="login.html">Inicia a sessão</a>
+                <br>
+                <a href="register.html">Registre-se</a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#"><i class='bx bx-shield'></i> Política de privacidade</a></li>
+                    <li><a href="#"><i class='bx bx-file'></i> Termos legais</a></li>
+                    <li><a href="#"><i class='bx bx-clipboard'></i> Acordo de Subscrição</a></li>
+                    <li><a href="#"><i class='bx bx-recycle'></i> Reembolsos</a></li>
+                    <li><a href="#"><i class='bx bx-cookie'></i> Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>© 2024 Gaming Store. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos
+                    respetivos proprietários nos E.U.A. e outros países. IVA incluído em todos os preços onde aplicável.
+                </p>
+            </div>
+            <div class="footer-extras">
+                <a href="#"><i class='bx bx-info-circle'></i> Acerca da Loja de Jogos</a> |
+                <a href="#"><i class='bx bx-game'></i></i> Distribuição</a> |
+                <a href="#"><i class='bx bx-support'></i> Apoio</a> |
+                <a href="#"><i class='bx bx-gift'></i> Cartões-Presente</a> |
+                <a href="#"><i class='bx bxl-facebook'></i> Facebook</a> |
+                <a href="#"><i class='bx bxl-twitter'></i> Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/scripts/mobile-menu.js"></script>
+
+</html>
