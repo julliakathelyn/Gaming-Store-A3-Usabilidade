@@ -7,6 +7,8 @@ Um **e-commerce de jogos digitais**, desenvolvido como projeto da UC de **Usabil
 
 O objetivo foi colocar em prática as habilidades adquiridas durante o semestre, unindo conceitos de design de interfaces, usabilidade e desenvolvimento web.  
 
+<img src="img-gaming-store/img-4.png" alt="App Screenshot" width="100%" height="700"/>
+
 - [GitHub Pages - Gaming Store ](https://www.youtube.com/playlist?list=PL2Fdisxwzt_cajoGVWTx44wM6Ht09QJ3A)
 
 ---
