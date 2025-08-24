@@ -8,6 +8,8 @@
     border-top: 5px solid #ff5733; /* add uma borda na parte superior em 5px */
     border-radius: 19px;
     text-align: center; /* centraliza os textos */
+    width: 100vw;
+    height: 100%;
 
 }
 
