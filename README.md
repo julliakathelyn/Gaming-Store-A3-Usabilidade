@@ -1,6 +1,6 @@
 # 🎮 Gaming Store  
 
-<img src="img-gaming-store/img-1.png" alt="App Screenshot" width="100%" height="700"/>
+<img src="img-gaming-store/img-5.png" alt="App Screenshot" width="100%" height="700"/>
 
 Um **e-commerce de jogos digitais**, desenvolvido como projeto da UC de **Usabilidade** no **4º semestre da Universidade Anhembi Morumbi** .
 O objetivo foi colocar em prática as habilidades adquiridas durante o semestre, unindo conceitos de design de interfaces, usabilidade e desenvolvimento web.  
