@@ -125,7 +125,7 @@ p {
 
 /* faz o bloquinho das categorias  */
 .block {
-    background-image: url(/img/wallpaper-iconmenu/test03.png);
+    background-image: url(../img/wallpaper-iconmenu/test03.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;

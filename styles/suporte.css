@@ -15,7 +15,7 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background: url('/img/wallpaper-iconmenu/test03.png') no-repeat center center fixed;
+    background: url('img/wallpaper-iconmenu/test03.png') no-repeat center center fixed;
 }
 
 /* Menu */
