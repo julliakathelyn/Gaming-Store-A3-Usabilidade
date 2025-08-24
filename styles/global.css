@@ -12,6 +12,6 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background: url('test03.png') no-repeat center center fixed;
+    background: url('https://raw.githubusercontent.com/julliakathelyn/Gaming-Store-A3-Usabilidade/main/img/wallpaper-iconmenu/test03.png') no-repeat center center fixed;
     background-size: cover;
 }
