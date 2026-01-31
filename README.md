@@ -5,7 +5,7 @@
 Um **e-commerce de jogos digitais**, desenvolvido como projeto da UC de **Usabilidade** no **4º semestre da Universidade Anhembi Morumbi** .
 O objetivo foi colocar em prática as habilidades adquiridas durante o semestre, unindo conceitos de design de interfaces, usabilidade e desenvolvimento web.  
 
-- [GitHub Pages - Gaming Store ](https://www.youtube.com/playlist?list=PL2Fdisxwzt_cajoGVWTx44wM6Ht09QJ3A)
+- [GitHub Pages - Gaming Store ](https://julliakathelyn.github.io/Gaming-Store-A3-Usabilidade/)
 
 ---
 
